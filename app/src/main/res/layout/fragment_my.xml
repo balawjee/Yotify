@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+    android:paddingTop="1dp"
+    android:paddingBottom="1dp"
+    tools:context=".MainActivity">
+
+    <!--android:id="@+id/btnCreateNotify"-->
+    <Button
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:text="Send to BackScreen"
+        android:id="@+id/btnSend2BS"
+        android:onClick="buttonClicked"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="Clear All Notification"
+        android:id="@+id/btnClearNotify"
+        android:background="@drawable/ic_notify_clear"
+        android:onClick="buttonClicked"
+        android:layout_toRightOf="@+id/btnCreateNotify"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/btnCreateNotify"/>
+
+
+    <!--<ScrollView android:layout_width="match_parent"-->
+        <!--android:id="@+id/scrollView"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_alignRight="@+id/btnListNotify"-->
+        <!--android:layout_below="@+id/btnListNotify"-->
+        <!--android:layout_alignLeft="@+id/btnListNotify">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+            <!--android:text="NotificationListenerService Example"-->
+            <!--android:id="@+id/textView"-->
+            <!--/>-->
+    <!--</ScrollView>-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List of Notification"
+        android:id="@+id/btnListNotify"
+        android:onClick="buttonClicked"
+        android:visibility="gone"
+        android:layout_below="@+id/btnClearNotify"
+        android:layout_alignLeft="@+id/btnClearNotify"
+        android:layout_alignRight="@+id/btnClearNotify"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/btnListNotify">
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="#b5b5b5"
+        android:theme="@android:style/Theme.Holo.Light"
+        android:fadingEdge="horizontal"
+        android:dividerHeight="2dp"
+        >
+    </ListView>
+    </LinearLayout>
+</RelativeLayout>

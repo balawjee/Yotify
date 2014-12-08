@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:padding="10dp">-->
+    <!--<TableRow>-->
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dip"
+    >
+            <LinearLayout android:id="@+id/thumbnail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dip"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="1dip">
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@android:drawable/alert_dark_frame"
+                    android:scaleType="center"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#040404"
+                android:textSize="15dip"
+                android:text="Title"
+                android:layout_toRightOf="@id/thumbnail"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtMessage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTitle"
+                android:layout_toRightOf="@id/thumbnail"
+                android:text="Message"
+                android:textColor="#343434"
+                android:textSize="10dip"
+                />
+
+            <TextView
+                android:id="@+id/txtTimeStamp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#343434"
+                android:text="10:00"
+                android:textSize="10dip"
+                android:layout_toRightOf="@id/txtTitle"
+                android:layout_alignTop="@id/txtTitle"
+                android:gravity="right"
+                />
+
+    <!--<ImageView-->
+        <!--android:id="@+id/removeButton"-->
+        <!--android:layout_width="20dp"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:background="@android:drawable/ic_delete"-->
+        <!--android:layout_below="@id/txtTimeStamp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_alignParentRight="true"-->
+         <!--/>-->
+
+        </RelativeLayout>
+    <!--</TableRow>-->
+<!--</TableLayout>-->

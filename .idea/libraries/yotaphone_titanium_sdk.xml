@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="yotaphone_titanium_sdk">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/yotaphone_titanium_sdk.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
